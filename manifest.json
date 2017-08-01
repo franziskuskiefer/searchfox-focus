@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "searchfox-focus",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://searchfox.org/*"],
+      "js": ["page-focus.js"]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "franziskuskiefer@gmail.com"
+    }
+  }
+}
